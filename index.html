@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Content Manager</title>		
+
+		<style>
+
+			*{
+				font-family: sans-serif;
+			}
+
+			body{
+				margin: 0;
+				padding: 0;				
+			}
+
+			header{
+				width: 100%;
+				height: 40px;
+				background-color: #C92D2D;
+				text-align: center;
+				vertical-align: center;
+				line-height: 40px;
+				margin-bottom: 20px; 
+			}
+
+			#search{
+				width: 50%;
+				border:0;
+				height:20px;
+			}
+
+			#btn-search{	
+				height: 20px;
+				border:0;
+			}
+
+			#content-container{
+				width: 95%;
+				height: 100%;
+				background-color: #E1E1E1;
+				margin:0 auto;
+			}
+			
+			.content-row{
+				background-color: red;
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				vertical-align: center;
+				margin-bottom: 15px;
+			}
+
+			.content-column{
+				display: inline-block;
+			}
+
+			.disciplina{
+				background-color: blue;
+				width:7%;
+			}
+
+			.nome{
+			 	background-color: orange;
+			 	width:65%;
+			}
+
+			.dt-submissao{
+				background-color:green;
+				width:12%;
+			}
+
+			.visualizar{
+				background-color: gray;
+				width:12%;
+				float:right;
+				text-align: center;
+			}
+
+			header nav{
+				float: left;
+				height: 30px;
+				line-height: 30px;
+				vertical-align: center;
+				width: 30%;
+			}
+
+			header nav ul li{
+				list-style: none;
+				display: inline-block;
+			}
+
+			header #search-bar{
+				float: left;
+				width: 55%;
+			}
+
+			#header-container{
+				width: 95%;								
+			}
+
+
+		</style>
+
+	</head>
+
+	<body>
+		<header>
+			<div id="header-container">
+				<nav>
+					<ul>
+						<li>Disciplinas</li>
+					</ul>
+					
+				</nav>
+				<div id="search-bar">
+					<label>Buscar:</label>
+					<input type="search" id="search" />
+					<input type="submit" id="btn-search" value="Pesquisar">
+				</div>
+			</div>
+		</header>
+
+		<div id="content-container">
+
+			<h3>Content:</h3>
+
+			<div class="content-row">
+				<span class="content-column disciplina">Disciplina</span>
+				<span class="content-column nome">Nome bastante extenso, pois é.</span>
+				<span class="content-column dt-submissao">Dt. submissão</span>
+				<span class="content-column visualizar">Visualizar</span>				
+			</div>
+
+			<div class="content-row">
+				<span class="content-column disciplina">Disciplina</span>
+				<span class="content-column nome">Nome bastante extenso, pois é.</span>
+				<span class="content-column dt-submissao">Dt. submissão</span>
+				<span class="content-column visualizar">Visualizar</span>				
+			</div>
+
+			<div class="content-row">
+				<span class="content-column disciplina">PPI</span>
+				<span class="content-column nome">Guia PHP Orientado à Objetos</span>
+				<span class="content-column dt-submissao">20/11/2014</span>
+				<span class="content-column visualizar">Visualizar</span>				
+			</div>
+			
+		</div>
+
+		
+
+	</body>	
+</html>
